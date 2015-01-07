@@ -1,0 +1,102 @@
+/* initial prompt */
+#container-prompt{
+    margin: 100px auto;
+    padding: 0px 20px 20px 20px;
+    width:300px;
+    font-family: arial;
+    border: 1px solid gray;
+}
+#container-prompt div{margin-top:20px; margin-left: 95px}
+.cancel-btn,.ok-btn{width: 100px; color: white; border:none;}
+.cancel-btn{background-color: red;}
+.ok-btn{background-color: blue;}
+#container-prompt input{width:295px;}
+
+/* main-game */
+#container-main{
+  background-color:black; width: 500px; height: 500px;
+  position: relative;
+}
+/* 0 */
+.brick{
+  background-color: blue; width: 25px; height:25px; 
+  position: absolute;
+}
+/* 1 */
+.coin{
+  background-image: url('../img/coin.png'); background-size: cover; width: 25px; height:25px; 
+  position: absolute;
+}
+/* 2 */
+.blank{
+  width: 25px; height:25px; 
+  position: absolute;
+}
+/* Creatures */
+.pacman-left1{
+  background-image: url('../img/pacman2_close.png'); background-size: cover; width: 25px; height:25px; 
+  position: absolute; transform: rotate(180deg);
+}
+.pacman-left2{
+  background-image: url('../img/pacman2_open.png'); background-size: cover; width: 25px; height:25px; 
+  position: absolute; transform: rotate(180deg);
+}
+.pacman-right1{
+  background-image: url('../img/pacman2_close.png'); background-size: cover; width: 25px; height:25px; 
+  position: absolute;
+}
+.pacman-right2{
+  background-image: url('../img/pacman2_open.png'); background-size: cover; width: 25px; height:25px; 
+  position: absolute;
+}
+.pacman-up1{
+  background-image: url('../img/pacman2_close.png'); background-size: cover; width: 25px; height:25px; 
+  position: absolute; transform: rotate(270deg);
+}
+.pacman-up2{
+  background-image: url('../img/pacman2_open.png'); background-size: cover; width: 25px; height:25px; 
+  position: absolute; transform: rotate(270deg);
+}
+.pacman-down1{
+  background-image: url('../img/pacman2_close.png'); background-size: cover; width: 25px; height:25px; 
+  position: absolute; transform: rotate(90deg);
+}
+.pacman-down2{
+  background-image: url('../img/pacman2_open.png'); background-size: cover; width: 25px; height:25px; 
+  position: absolute; transform: rotate(90deg);
+}
+
+.ghost-left1,.ghost-right1,.ghost-up1,.ghost-down1{
+  background-image: url('../img/ghost.jpg'); background-size: cover; width: 25px; height:25px; 
+  position: absolute;
+}
+.ghost-left2,.ghost-right2,.ghost-up2,.ghost-down2{
+  background-image: url('../img/ghost.jpg'); background-size: cover; width: 25px; height:25px; 
+  position: absolute; transform: scaleX(-1);
+}
+
+#container-main, #right-side{
+  display: inline-block;
+  vertical-align: top;
+}
+#scoreboard,#btns-add{padding: 10px}
+
+#scoreboard{font-size:18px; }
+.pacman-score,.ghost-score{margin: 20px 0px;}
+.pacman-score{color:blue;}
+.ghost-score{color:red;}
+
+#pacman-btn{background: yellow;}
+#ghost-btn{background: red; color:white;}
+#pacman-btn, #ghost-btn{
+  display: block; margin: 10px 0px;
+  width:200px; font-size: 20px;
+}
+
+#random-btn{background: green; color:white;}
+#kill-btn{background: orange; color:white;}
+#random-btn, #kill-btn{
+  margin: 20px 20px;
+  width:200px; font-size: 20px;
+}
+#mode-text{font-size: 22px; margin:0px 20px;}

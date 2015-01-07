@@ -1,0 +1,29 @@
+Sync initialization
+done - 1. box for entering player's name
+
+2. client emits using "start_join" event with player name to check if game started already or not (check "new_game" variable at server)
+
+3. server listen for "start_join" event and emits using "game status" with "new_game" variable
+
+4. client listens for "game_status"
+
+4a. if new game, 
+4ai. client emits "create_world" items, pacmans, ghosts stack to server, then set "new_game" variable to false
+4aii. server listens to "create_world", populate variables, and then broadcast "update_world"
+4aiii. client listens to "update_world" to update the world
+
+4b. else (existing game), 
+4bi. client listens to "update_world" to update the world
+
+
+5. 
+
+[Get pacman sync movement]
+
+[Coin update]
+
+[Ghost movement]
+
+[Add chat function]
+
+[Refactor code with "require"]
